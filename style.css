@@ -1,50 +1,74 @@
-containers {
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
+/* Вся шапка страницы */
+header {
+    font-size: 20px;
+    display: flex;
+    background: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid black;
-    padding-bottom: 20px;
-    background-color: aliceblue;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px #000;
+}
+
+/* Лого */
+h1 {
+    font-size: 25px;
+    padding: 20px;
+    padding-left: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 /* Меню */
-
-.menu {
-    background-color: rgba(127, 255, 212, 0.544);
-}
-
-nav{
-    border-bottom: 1px solid black;
-}
-
 .navig ol {
     list-style-type: none;
-    padding-left: 0;
 }
 
 .element {
-    display: inline-block;
+    position: relative;
+    float: left;
+    display: inline-flex;
+    width: fit-content;
 }
 
-.element a::after {
-    display: inline-block;
-    color: #1e3446ab;
-    content: '|';
-    font-size: 150%;
-    font-weight: 500;
-    padding: 0 30px;
-}
-
-.navig a{
+.element a {
+    padding: 15px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
     text-decoration: none;
-    color: #1e3446ab;
-    font-weight: 800;
 }
-
 .navig a:hover {
-    color: #007bff;
-    background-color: aliceblue;
+    background: #000;
+    color: aliceblue;
 }
 /* Конец меню */
+
+body {
+    height: 100vh;
+    background: url(v1016-b-09.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: aliceblue;
+    padding: 10px;
+}
